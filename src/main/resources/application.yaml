@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: network-testing-system
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
