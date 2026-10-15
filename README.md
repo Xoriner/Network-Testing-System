@@ -34,7 +34,7 @@ Measured values: throughput, retransmissions (TCP), jitter and packet loss (UDP)
 - Docker Compose
 - springdoc-openapi (Swagger UI as the admin interface)
 
-## Project layout
+## Planned Project layout
 
 ```
 backend/    Spring Boot application
