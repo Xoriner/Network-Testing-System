@@ -15,6 +15,7 @@ target/
 
 ### IntelliJ IDEA ###
 .idea
+/backend/.idea
 *.iws
 *.iml
 *.ipr
@@ -28,6 +29,11 @@ target/
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
+
+### Python ###
+.venv/
+__pycache__/
+*.pyc
 
 ### VS Code ###
 .vscode/
