@@ -6,13 +6,17 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.UniqueConstraint;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Entity
-@Table(name = "target")
-class Target {
+@Table(
+        name = "target",
+        uniqueConstraints = @UniqueConstraint(columnNames = {"address", "port"})
+)
+public class Target {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

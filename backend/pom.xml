@@ -8,11 +8,11 @@
 		<version>4.1.1</version>
 		<relativePath/>
 	</parent>
-	<groupId>rodak.michal</groupId>
-	<artifactId>network-testing-system</artifactId>
+	<groupId>rodak.michal.networktesting</groupId>
+	<artifactId>network-testing-system-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>network-testing-system</name>
-	<description>network-testing-system</description>
+	<name>Network Testing System - Backend</name>
+	<description>Backend API for network testing system</description>
 	<url/>
 	<licenses>
 		<license/>

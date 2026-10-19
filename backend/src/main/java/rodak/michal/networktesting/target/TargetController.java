@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import rodak.michal.networktesting.target.dto.TargetResponse;
 
 import java.util.List;
 
@@ -15,10 +16,10 @@ import java.util.List;
 @Tag(name = "Targets API")
 public class TargetController {
 
-    private final TargetRepository targetRepository;
+    private final TargetService targetService;
 
     @GetMapping()
-    List<Target> getTargets() {
-        return targetRepository.findAll();
+    List<TargetResponse> getAll() {
+        return targetService.findAll();
     }
 }
