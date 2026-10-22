@@ -35,5 +35,7 @@ build/
 __pycache__/
 *.pyc
 
+.claude
+
 ### VS Code ###
 .vscode/
