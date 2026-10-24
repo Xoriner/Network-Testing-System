@@ -14,7 +14,9 @@ import lombok.Setter;
 @Entity
 @Table(
         name = "target",
-        uniqueConstraints = @UniqueConstraint(columnNames = {"address", "port"})
+        uniqueConstraints = @UniqueConstraint(
+                name = "uq_target_address_port",
+                columnNames = {"address", "port"})
 )
 public class Target {
 
@@ -22,7 +24,7 @@ public class Target {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 100)
     @Setter
     private String name;
 

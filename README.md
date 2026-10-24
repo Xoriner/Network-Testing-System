@@ -47,6 +47,7 @@ docs/       notes and diagrams
 Start the app in root folder with:
 
 ```
+cd backend
 ./mvnw spring-boot:run
 ```
 
